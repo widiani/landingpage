@@ -1,24 +1,24 @@
 {
-	"containerDefinitions": [
-	  {
-        "name": "landingpage-widiani",
-        "image": "493822984448.dkr.ecr.us-east-2.amazonaws.com/test-jenkins:1.0.BUILD_NUMBER",
-        "cpu": 0,
-        "memory": 128,
-        "portMappings": [
-          {
-            "containerPort": 80
-          }
-        ],
-        "dockerLabels": {
-        "container" : "landingpage-widiani",
-        "environtment" : "development"
-        },
-        "logConfiguration" : {
-          "logDriver": "json-file",
-          "option": {
-            "labels" : "container, environment"
-          }
+  "containerDefinitions": [
+   {
+     "name": "landingpage-widiani",
+     "image": "493822984448.dkr.ecr.us-east-2.amazonaws.com/test-jenkins:1.0.BUILD_NUMBER",
+     "cpu": 0,
+     "memory": 128,
+     "portMappings": [
+       {
+         "containerPort": 80
+       }
+     ],
+     "dockerLabels": {
+       "container" : "landingpage-widiani",
+       "environtment" : "development"
+      },
+      "logConfiguration" : {
+        "logDriver": "json-file",
+        "option": {
+          "labels" : "container, environment"
         }
-	  }]
+     }
+   }]
 }
