@@ -16,7 +16,7 @@
       },
       "logConfiguration" : {
         "logDriver": "json-file",
-        "option": {
+        "options": {
           "labels" : "container, environment"
         }
      }
