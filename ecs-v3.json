@@ -1,0 +1,24 @@
+{
+  "containerDefinitions": [
+   {
+     "name": "landingpage-widiani",
+     "image": "widiani2103/landingpage:1.0.1.17",
+     "cpu": 0,
+     "memory": 128,
+     "portMappings": [
+       {
+         "containerPort": 80
+       }
+     ],
+     "dockerLabels": {
+       "container" : "landingpage-widiani",
+       "environtment" : "development"
+      },
+      "logConfiguration" : {
+        "logDriver": "json-file",
+        "options": {
+          "labels" : "container, environment"
+        }
+     }
+   }]
+}
